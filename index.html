@@ -1,1 +1,91 @@
-<div id="app"></div>
+<div id="app">
+  <h1>A Quick Guide to Get Started with JavaScript Classes</h1>
+  <h3>What is a <em>class</em>?</h3>
+  <ul>
+    <li>
+      Classes were added to JavaScript in
+      <strong>ES6 specification </strong>(<em>ECMAScript 2015)</em>.
+    </li>
+    <li>
+      Classes are not a new feature per se. Classes basically provide a
+      different way to create objects and work with prototypes and inheritance.
+      This is also why many JavaScript developers call classes a
+      <mark>syntactic sugar</mark>.
+    </li>
+    <li>Every class starts with '<em>class</em>' keyword</li>
+    <li>
+      The convention is to write a name of the class startting with a capital
+      letter
+    </li>
+    <li>While declaring a class no parentheses and parameters are required.</li>
+  </ul>
+  <h3>Classes and Constructor</h3>
+  <ul>
+    <li>
+      Classes don't support parameters, but still you can specify parameters for
+      your class in the method called <mark>constructor</mark>.
+    </li>
+    <li>
+      <em>Constructor</em> is a unique method that is created inside a class and
+      only once.
+    </li>
+    <li>
+      The constructor executes tasks you have specified when you create a new
+      instance of a class.
+    </li>
+    <li>
+      Instance is a new object based on a specific class, and it inherits all
+      properties and methods defined in that class.
+    </li>
+    <li>
+      Every time you create new instance of a class it will also automatically
+      invoke the constructor method.
+    </li>
+    <li>
+      If you specify some parameters for the constructor method these parameters
+      will become parameters of the class itself.
+    </li>
+    <li>
+      While creating new instance of the class, you can pass in some values as
+      arguments, based on the parameters of the constructor.
+    </li>
+    <li>
+      The '<em>this</em>' keyword inside a class refers to the class itself.
+    </li>
+  </ul>
+  <h3>Class Properties and Methods</h3>
+  <ul>
+    <li>
+      A class can have infinite number of properties, just like any object.
+    </li>
+    <li>
+      You can define properties for the class and assign thier values only
+      inside the constructor method.
+    </li>
+    <li>
+      Alternatively, you can specify class fields( same as properties) outside
+      of constructor but inside of class.
+    </li>
+    <li>
+      Three types of class fields: <strong>public, static</strong> and
+      <strong>private</strong>
+    </li>
+    <li>
+      Class methods are defiend inside the class body but outside of constructor
+    </li>
+    <li>
+      Defining class methods is as simple as a function. Only the difference is:
+      a class method is defined without a '<em>function</em>' and
+      '<em>this</em>' keywords.
+    </li>
+    <li>
+      However, if you want to reference some property or method of the class you
+      are working with, you need '<em>this</em>' keywrod.
+    </li>
+    <li>
+      To call the method on the new instance that you have created, use
+      <em>dot</em> notation.
+    </li>
+    <li></li>
+  </ul>
+</div>
