@@ -30,4 +30,25 @@ console.log(jon.age); //21
 const say = jon.sayHi();
 console.log(say); //Hello John
 
+// Public Class Fields and Methods
+// ********************************************
 
+class Car {
+  //Define class fields for 'numOfWheels' and 'fuel'.
+  numOfWheels = 4;
+  fuelType = 'electric';
+
+  //Define public method
+  startEngine() {
+    return 'Engine is running';
+  }
+}
+
+//create instance of 'Car' class
+const tesla = new Car();
+
+//log the value of public class field 'fuelType'
+console.log(tesla.fuelType); //electric
+
+//call the public class method
+console.log(tesla.startEngine()); //Engine is running.

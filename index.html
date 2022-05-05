@@ -71,7 +71,8 @@
       <strong>private</strong>
     </li>
     <li>
-      Class methods are defined inside the class body but outside of constructor.
+      Class methods are defined inside the class body but outside of
+      constructor.
     </li>
     <li>
       Defining class methods is as simple as a function. Only the difference is:
@@ -85,6 +86,44 @@
     <li>
       To call the method on the new instance that you have created, use
       <em>dot</em> notation.
+    </li>
+  </ul>
+  <h3>Public class fields and methods</h3>
+  <ul>
+    <li>
+      '<em>Class properties</em>' and '<em>public class field</em>' are very
+      similar.
+    </li>
+    <li>
+      <h4>
+        Differences between '<em>Class properties</em>' and '<em
+          >public class field</em
+        >':
+      </h4>
+      <ol>
+        <li>
+          <em>Class properties</em> are defined in the constructor method.
+        </li>
+        <li><em>Class fields</em> are defined outside of constructor.</li>
+        <li>
+          But we still need to use constructor, if you want to define class
+          parameters or do some stuff during class intantiation.
+        </li>
+        <li>
+          The <em>public fields</em> don't use '<em>this</em>' keyword. To
+          define new <em>public fields</em>, we start with the name of the
+          field(property), not the '<em>this</em>' and <em>dot</em> notation.
+        </li>
+        <li>
+          Public fields are always accessible from the inside as well as outside
+          of the class, and its instances.
+        </li>
+        <li>
+          That means, we can access and modify the public fields. And we can do
+          the same for public methods as well.
+        </li>
+        <li>Any class field and method defined are public by default</li>
+      </ol>
     </li>
     <li></li>
   </ul>
