@@ -52,3 +52,31 @@ console.log(tesla.fuelType); //electric
 
 //call the public class method
 console.log(tesla.startEngine()); //Engine is running.
+
+//Static class fields and methods
+// **********************************************
+
+class Vehicle {
+  //Define static property to keep track of how many instances of Vehicle has been created.
+  static numOfCopies = 0;
+
+  constructor() {
+    //When new instance of Vehicle is created update the number of Vehicle instances
+    Vehicle.numOfCopies++;
+  }
+
+  //Create static method to access static field 'numOfCopies'
+  static getNumOfCopies() {
+    //Return the value of 'numOfCopies' field
+    return Vehicle.numOfCopies;
+  }
+}
+
+//Log number of instance of Vehicle
+console.log(Vehicle.getNumOfCopies()); //0
+
+//Create instance of Vehicle
+const porshe = new Vehicle();
+
+//log number of instances of Vehicle again
+console.log(Vehicle.getNumOfCopies()); //1
