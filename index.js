@@ -113,3 +113,13 @@ console.log(myApp.getVersionPublic());
 
 console.log(myApp.callGetVersion());
 // 1.0
+
+console.log(myApp.version); //undefined
+// console.log(myApp.getVersion());  //
+// Error: myApp.getVersion is not a function.
+
+myApp.version = '1.1.0';
+console.log(myApp.version); // 1.1.0
+
+console.log(myApp.getVersionPublic());
+// 1.0
