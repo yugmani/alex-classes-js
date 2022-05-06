@@ -80,3 +80,36 @@ const porshe = new Vehicle();
 
 //log number of instances of Vehicle again
 console.log(Vehicle.getNumOfCopies()); //1
+
+// Private Class Fields and Methods
+// ********************************************************
+
+class App {
+  //Declare private field 'version'
+  #version = '1.0';
+
+  //Create private method 'getVerstion'
+  #getVersion() {
+    return this.#version;
+  }
+
+  // Create public method 'getVersionPublic to access private field 'version'
+  getVersionPublic() {
+    return this.#version;
+  }
+
+  // Create another public method that calls the private method 'getVersion'
+  callGetVersion() {
+    return this.#getVersion();
+  }
+}
+
+//Create instance of App
+const myApp = new App();
+
+// Log number of version
+console.log(myApp.getVersionPublic());
+// 1.0
+
+console.log(myApp.callGetVersion());
+// 1.0
