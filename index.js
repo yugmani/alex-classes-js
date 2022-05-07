@@ -123,3 +123,43 @@ console.log(myApp.version); // 1.1.0
 
 console.log(myApp.getVersionPublic());
 // 1.0
+
+//Classes and instances
+// ****************************************************
+
+//class without parameters
+// ----------------------------------------------
+
+class SimpleClass {
+  //create constructor
+  constructor() {
+    //create class property
+    this.isAlive = true;
+  }
+}
+
+// creating instance of 'SimpleClass'
+const jordan = new SimpleClass();
+
+// log the 'isAlive' property of 'jordan' instance.
+console.log(jordan.isAlive); //true
+
+// class with a parameters
+// -------------------------------------------------
+
+class MediumClass {
+  // create constructor with one parameter
+  constructor(name) {
+    //create class property called 'name'
+    this.name = name;
+    //create another boolean property 'isEmployed'
+    this.isEmployed = true;
+  }
+}
+
+// create instance of 'MediumClass' class with an argument for 'name' parameter.
+const jerry = new MediumClass('Jerry');
+
+console.log(jerry.name); //Jerry
+console.log(jerry.isEmployed); //true
+
